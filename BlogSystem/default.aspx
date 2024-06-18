@@ -34,6 +34,7 @@
                         <div class="layui-input-block">
                             <input type="radio" name="sex" value="管理员" title="管理员" checked>
                             <input type="radio" name="sex" value="用户" title="用户">
+                            <input type="radio" name="sex" value="用户" title="用a">
                         </div>
                     </div>
                     <div class="layui-form-item">
