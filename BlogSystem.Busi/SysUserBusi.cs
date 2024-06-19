@@ -34,7 +34,7 @@ namespace BlogSystem.Busi
             throw new NotImplementedException();
         }
 
-        public List<SysUserEntity> GetAll(string str)
+        public List<SysUserEntity> GetAll(string w)
         {
             throw new NotImplementedException();
         }

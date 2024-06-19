@@ -12,6 +12,6 @@ namespace BlogSystem.Inter
         bool Update(T t);
         bool Delete(int id);
         T Get(int id);
-        List<T> GetAll(string str);
+        List<T> GetAll(string w);
     }
 }

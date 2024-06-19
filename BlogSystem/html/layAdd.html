@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增博客</title>
+    <!-- 如果你的项目中使用了layui，确保这里正确引入了layui的相关CSS和JS -->
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+    <style>
+        .marTop {
+            margin-top: 40px;
+            margin-left: -40px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layui-container marTop">
+        <form class="layui-form" action="javascript:;" id="blogForm">
+            <div class="layui-form-item">
+                <label class="layui-form-label">标题</label>
+                <div class="layui-input-block">
+                    <input type="text" id="blogTitle" lay-verify="required" placeholder="请输入标题" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">类型</label>
+                <div class="layui-input-block">
+                    <input type="text" id="blogType" placeholder="请输入类型" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <!--<div class="layui-form-item">
+                <label class="layui-form-label">发布时间</label>
+                <div class="layui-input-block">-->
+                    <!-- 使用lay-date组件作为日期选择器 -->
+                    <!--<input type="text" id="blogRelease" placeholder="请选择发布时间" class="layui-input">
+                </div>
+            </div>-->
+            <div class="layui-form-item">
+                <label class="layui-form-label">作者</label>
+                <div class="layui-input-block">
+                    <input type="text" id="blogAuthor" lay-verify="required" placeholder="请输入作者" autocomplete="off"
+                           class="layui-input">
+                </div>
+            </div>
+
+            <!-- <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button type="button" class="layui-btn" id="submitButton">提交</button>
+                </div>
+            </div> -->
+        </form>
+    </div>
+
+    <script src="//cdn.staticfile.org/jquery/1.12.3/jquery.min.js"></script>
+    <!-- <script>
+        //var index = parent.layer.getFrameIndex(window.name); // 获取窗口索引
+    </script> -->
+
+</body>
+</html>

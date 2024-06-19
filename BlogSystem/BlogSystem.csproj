@@ -44,6 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,36 +71,85 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default.aspx" />
-    <Content Include="home.aspx" />
+    <Content Include="ContentBlog.aspx" />
+    <Content Include="html\blogAdd.aspx" />
+    <Content Include="html\blogDetail.aspx" />
+    <Content Include="html\blogUpdate.aspx" />
+    <Content Include="html\layAdd.html" />
+    <Content Include="html\testUpdate.aspx" />
+    <Content Include="PageLogin.aspx" />
     <Content Include="Layui\css\layui.css" />
     <Content Include="Layui\font\iconfont.svg" />
     <Content Include="Layui\layui.js" />
+    <Content Include="ContentPage.aspx" />
+    <Content Include="Script\layui_custom.js" />
+    <Content Include="UserAdmin.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="ContentBlog.aspx.cs">
+      <DependentUpon>ContentBlog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="default.aspx.designer.cs">
-      <DependentUpon>default.aspx</DependentUpon>
+    <Compile Include="ContentBlog.aspx.designer.cs">
+      <DependentUpon>ContentBlog.aspx</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="html\blogAdd.aspx.cs">
+      <DependentUpon>blogAdd.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="html\blogAdd.aspx.designer.cs">
+      <DependentUpon>blogAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\blogDetail.aspx.cs">
+      <DependentUpon>blogDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\blogDetail.aspx.designer.cs">
+      <DependentUpon>blogDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\blogUpdate.aspx.cs">
+      <DependentUpon>blogUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\blogUpdate.aspx.designer.cs">
+      <DependentUpon>blogUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html\testUpdate.aspx.cs">
+      <DependentUpon>testUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html\testUpdate.aspx.designer.cs">
+      <DependentUpon>testUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageLogin.aspx.cs">
+      <DependentUpon>PageLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLogin.aspx.designer.cs">
+      <DependentUpon>PageLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPage.aspx.cs">
+      <DependentUpon>ContentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContentPage.aspx.designer.cs">
+      <DependentUpon>ContentPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserAdmin.aspx.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserAdmin.aspx.designer.cs">
+      <DependentUpon>UserAdmin.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +158,7 @@
     <Content Include="Layui\font\iconfont.woff" />
     <Content Include="Layui\font\iconfont.woff2" />
     <None Include="packages.config" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,6 +183,9 @@
       <Project>{13f5b7d4-4157-4311-a96f-4b1eed6ab971}</Project>
       <Name>BlogSystem.Inter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

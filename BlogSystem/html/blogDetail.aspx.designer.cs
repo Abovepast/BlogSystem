@@ -7,11 +7,11 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace BlogSystem
+namespace BlogSystem.html
 {
 
 
-    public partial class WebForm1
+    public partial class blogDetail
     {
 
         /// <summary>
