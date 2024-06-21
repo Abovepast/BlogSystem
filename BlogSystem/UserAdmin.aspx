@@ -28,7 +28,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">用户ID:</label>
                     <div class="layui-input-block">
-                        <asp:TextBox ID="blogAuthor" runat="server" CssClass="layui-input" ReadOnly="true"></asp:TextBox>
+                        <asp:TextBox ID="blogAuthor" runat="server" CssClass="layui-input" ReadOnly="true" Text="该页功能未写"></asp:TextBox>
                         <%--<input type="text" id="blogAuthor" lay-verify="required" autocomplete="off"
 					               class="layui-input">--%>
                     </div>
@@ -36,7 +36,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">用户名:</label>
                     <div class="layui-input-block">
-                        <asp:TextBox ID="blogRelease" runat="server" CssClass="layui-input" ReadOnly="false"></asp:TextBox>
+                        <asp:TextBox ID="blogRelease" runat="server" CssClass="layui-input" ReadOnly="false" Text="该页功能未写"></asp:TextBox>
                         <%--<input type="text" id="blogAuthor" lay-verify="required" autocomplete="off"
                class="layui-input">--%>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">密码:</label>
                     <div class="layui-input-block">
-                        <asp:TextBox ID="blogTitle" runat="server" CssClass="layui-input" ReadOnly="false"></asp:TextBox>
+                        <asp:TextBox ID="blogTitle" runat="server" CssClass="layui-input" ReadOnly="false" Text="该页功能未写"></asp:TextBox>
                         <%--<input type="text" id="blogTitle" lay-verify="required" autocomplete="off"
 					               class="layui-input">--%>
                     </div>
@@ -52,7 +52,7 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">确认密码:</label>
                     <div class="layui-input-block">
-                        <asp:TextBox ID="aContent" runat="server" CssClass="layui-input"></asp:TextBox>
+                        <asp:TextBox ID="aContent" runat="server" CssClass="layui-input" Text="该页功能未写"></asp:TextBox>
                         <%--<textarea name="" id="aContent" placeholder="多行文本框" class="layui-textarea" style="height: 400px;"></textarea>--%>
                     </div>
                 </div>
